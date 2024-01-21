@@ -34,7 +34,7 @@ while True:
                favoritar_contato(lista_de_contatos=lista_de_contatos,indice_contato=indice_contato)
          case "5":
               ver_contatos(lista_de_contatos)
-              indice_atividade = input("Digite o número da atividade que deseja deletar: ")
-              apagar_contato(lista_de_contatos=lista_de_contatos,indice_atividade=indice_atividade)
+              indice_contato = input("Digite o número da atividade que deseja deletar: ")
+              apagar_contato(lista_de_contatos=lista_de_contatos,indice_contato=indice_contato)
          case "6":
               break
