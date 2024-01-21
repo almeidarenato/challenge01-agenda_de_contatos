@@ -12,7 +12,15 @@ def ver_contatos(lista_de_contatos):
         print(f"{indice}- [{favorito}] {nome_contato} \ntel: {telefone_contato} email:{email_contato}")
     return 
 def editar_contato(lista_de_contatos,indice_contato,contato):
-    print("Contatos editado com sucesso")
+    indice = int(indice_contato) -1
+    print(len(lista_de_contatos))
+    if indice >= 0 and indice< len(lista_de_contatos) :
+            lista_de_contatos[indice]["nome"] = contato["nome"]
+            lista_de_contatos[indice]["telefone"] = contato["telefone"]
+            lista_de_contatos[indice]["email"] = contato["email"]
+            print(f"Contato {indice_contato} atualizada para nome:{contato["nome"]} \n telefone:{contato["telefone"]} email: {contato["email"]}")
+    else:
+            print("Contato inexistente")  
     return 
 def favoritar_contato(lista_de_contatos,indice_contato):
     indice = int(indice_contato) -1
