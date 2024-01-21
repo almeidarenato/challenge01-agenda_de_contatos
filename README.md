@@ -22,7 +22,7 @@ Necessário ter o python instalado na versão 3.12.1 ou superior
 https://www.python.org/ 
 
 ## Para executar a aplicação
-executar o comando abaixo no terminal
+após clonar o repositório na sua máquina, na raiz da aplicação executar o código abaixo.
 
 ```
 python contatos.py
