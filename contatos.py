@@ -1,5 +1,5 @@
 
-from funcoes_contatos import adicionar_contato,apagar_contato,editar_contato,favoritar_contato,ver_contatos
+from funcoes_contatos import adicionar_contato,apagar_contato,editar_contato,favoritar_contato,desfavoritar_contato,ver_contatos
 lista_de_contatos = []
 
 while True:
@@ -8,8 +8,9 @@ while True:
     print("2. Ver Contatos")
     print("3. Editar Contato")
     print("4. Favoritar Contato")
-    print("5. Deletar Contato")
-    print("6. Sair")
+    print("5. Desfavoritar Contato")
+    print("6. Deletar Contato")
+    print("7. Sair")
     escolha = input("Digite a sua opção: ")
     match escolha: 
         case "1":
@@ -34,7 +35,11 @@ while True:
             favoritar_contato(lista_de_contatos=lista_de_contatos,indice_contato=indice_contato)
         case "5":
             ver_contatos(lista_de_contatos)
+            indice_contato = input("Digite o número do contato que deseja desfavoritar: ")
+            desfavoritar_contato(lista_de_contatos=lista_de_contatos,indice_contato=indice_contato)
+        case "6":
+            ver_contatos(lista_de_contatos)
             indice_contato = input("Digite o número do contato que deseja apagar: ")
             apagar_contato(lista_de_contatos=lista_de_contatos,indice_contato=indice_contato)
-        case "6":
+        case "7":
             break

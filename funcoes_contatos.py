@@ -24,8 +24,19 @@ def editar_contato(lista_de_contatos,indice_contato,contato):
     return 
 def favoritar_contato(lista_de_contatos,indice_contato):
     indice = int(indice_contato) -1
-    lista_de_contatos[indice]["favorito"] = True
-    print(f"Contato {indice_contato} marcado como favorito")
+    if lista_de_contatos[indice]["favorito"] != True:
+        lista_de_contatos[indice]["favorito"] = True
+        print(f"Contato {indice_contato} marcado como favorito")
+    else:
+         print(f"Contato {indice_contato} já é favorito")
+    return
+def desfavoritar_contato(lista_de_contatos,indice_contato):
+    indice = int(indice_contato) -1
+    if lista_de_contatos[indice]["favorito"] != False:
+        lista_de_contatos[indice]["favorito"] = False
+        print(f"Contato {indice_contato} desfavoritado")
+    else:
+        print(f"Contato {indice_contato} já não é favorito")
     return
 def apagar_contato(lista_de_contatos,indice_contato):
     indice = int(indice_contato)-1
