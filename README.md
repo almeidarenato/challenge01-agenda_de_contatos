@@ -1,7 +1,38 @@
 # Challenge01 - Agenda de Contatos
 Desafio da RocketSeat - Desenvolver uma agenda de contatos usando os conceitos do módulo 1
 
-### Regras da aplicação
+Esta agenda de contatos foi desenvolvida para uso no terminal.
+Ela possui as funciondalides: 
+1. Adição de Contato
+2. Ver Contato
+3. Editar Contato
+4. Favoritar Contato
+5. Deletar Contato
+6. Sair 
+
+## Imagem da aplicação rodando no terminal: 
+### Menu da aplicação:
+
+![menu-aplicação](imgs/print-menu.png)
+### Funcionalidade Ver Contatos:
+
+![menu-aplicação](imgs/print-contatos.png)
+## Requisitos para executar a aplicação
+Necessário ter o python instalado na versão 3.12.1 ou superior
+https://www.python.org/ 
+
+## Para executar a aplicação
+executar o comando abaixo no terminal
+
+```
+python contatos.py
+```
+ou
+```
+python3 contatos.py
+```
+
+## Regras da aplicação
 
 - A aplicação deve iniciar mostrando uma lista de opções do que é possível fazer com o app e permitir que o usuário digite uma escolha para iniciar a aplicação.
 - Deve ser possível adicionar um contato
