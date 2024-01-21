@@ -4,12 +4,13 @@ Desafio da RocketSeat - Desenvolver uma agenda de contatos usando os conceitos d
 Esta agenda de contatos foi desenvolvida para uso no terminal, durante o curso da RocketSeat de Python.
 Ela possui as seguintes funcionalidades:
 1. Adição de Contato
-2. Ver Contato
-3. Editar Contato
-4. Favoritar Contato
-5. Desfavoritar Contato
-6. Deletar Contato
-7. Sair 
+2. Ver Contatos
+3. Ver Contatos Favoritos
+4. Editar Contato
+5. Favoritar Contato
+6. Desfavoritar Contato
+7. Deletar Contato
+8. Sair 
 
 ## Imagem da aplicação rodando no terminal: 
 ### Menu da aplicação:
